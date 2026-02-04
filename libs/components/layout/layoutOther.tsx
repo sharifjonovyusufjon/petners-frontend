@@ -1,10 +1,10 @@
 import useDeviceDetect from "@/libs/hooks/useDeviceDetect";
 import Head from "next/head";
 import { Component } from "react";
-import Top from "../Top";
 import Footer from "../Footer";
+import Top from "../Top";
 
-const layoutBasic = (Component: any) => {
+const layoutOther = (Component: any) => {
   return (props: any) => {
     const device = useDeviceDetect();
 
@@ -12,7 +12,7 @@ const layoutBasic = (Component: any) => {
       return (
         <>
           <Head>
-            <title>Home - Mobile</title>
+            <title>Other - Mobile</title>
           </Head>
           <div>
             <div>
@@ -32,8 +32,8 @@ const layoutBasic = (Component: any) => {
       return (
         <>
           <Head>
-            <title>Home - Desktop</title>
-            <meta name="description" content="Welcome to Petners Home Page" />
+            <title>Other - Desktop</title>
+            <meta name="description" content="Welcome to Petners Other Page" />
             <link rel="icon" href="/favicon.ico" />
           </Head>
           <div>
@@ -54,4 +54,4 @@ const layoutBasic = (Component: any) => {
   };
 };
 
-export default layoutBasic;
+export default layoutOther;

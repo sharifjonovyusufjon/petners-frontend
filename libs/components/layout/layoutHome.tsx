@@ -1,6 +1,8 @@
 import useDeviceDetect from "@/libs/hooks/useDeviceDetect";
 import Head from "next/head";
 import { Component } from "react";
+import Footer from "../Footer";
+import Top from "../Top";
 
 const layoutHome = (Component: any) => {
   return (props: any) => {
@@ -13,7 +15,16 @@ const layoutHome = (Component: any) => {
             <title>Home - Mobile</title>
           </Head>
           <div>
-            <Component {...props} />
+            <div>
+              <Top />
+            </div>
+            <div>
+              {" "}
+              <Component {...props} />
+            </div>
+            <div>
+              <Footer />
+            </div>
           </div>
         </>
       );
@@ -26,7 +37,16 @@ const layoutHome = (Component: any) => {
             <link rel="icon" href="/favicon.ico" />
           </Head>
           <div>
-            <Component {...props} />
+            <div>
+              <Top />
+            </div>
+            <div>
+              {" "}
+              <Component {...props} />
+            </div>
+            <div>
+              <Footer />
+            </div>
           </div>
         </>
       );
