@@ -1,10 +1,12 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import { NextPage } from "next";
+import layoutHome from "@/libs/components/layout/layoutHome";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <div
       className="w-full h-screen flex items-center justify-between bg-slate-700 text-white text-3xl font-bold
@@ -20,4 +22,6 @@ export default function Home() {
       <Link href="/_admin">Admin</Link>
     </div>
   );
-}
+};
+
+export default layoutHome(Home);
