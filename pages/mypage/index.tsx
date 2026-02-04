@@ -1,7 +1,7 @@
-import layoutOther from "@/libs/components/layout/layoutOther";
+import layoutBasic from "@/libs/components/layout/layoutBasic";
 import { NextPage } from "next";
 
 const myPage: NextPage = () => {
   return <div>my page</div>;
 };
-export default layoutOther(myPage);
+export default layoutBasic(myPage);

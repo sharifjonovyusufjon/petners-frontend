@@ -14,12 +14,18 @@ const layoutBasic = (Component: any) => {
           <Head>
             <title>Home - Mobile</title>
           </Head>
-          <div>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
             <div>
               <Top />
             </div>
             <div>
-              {" "}
               <Component {...props} />
             </div>
             <div>
@@ -34,14 +40,19 @@ const layoutBasic = (Component: any) => {
           <Head>
             <title>Home - Desktop</title>
             <meta name="description" content="Welcome to Petners Home Page" />
-            <link rel="icon" href="/favicon.ico" />
           </Head>
-          <div>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
             <div>
               <Top />
             </div>
             <div>
-              {" "}
               <Component {...props} />
             </div>
             <div>
